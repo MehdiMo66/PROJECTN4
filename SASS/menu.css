@@ -87,6 +87,9 @@ footer i {
     font-style: normal;
     gap: 30px;
   }
+  footer a {
+    color: inherit;
+  }
 }
 /**mobile first***/
 body {
