@@ -289,10 +289,40 @@ a {
 
 /********DESKTOP*********/
 
+@media (min-width:768px) and (max-width:1023px) {
+   
+   
+    .fonctionnement{
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+
+     h2 {
+        text-align: center;
+     }     
+}
+
+  .restaurant  {
+    
+   a{ width: 50%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+
+}
+
+
+}
+
+
 @media (min-width:1024px) {
 
     h1 {
         font-size: 30px;
+    
     }
 
 

@@ -68,8 +68,11 @@ footer i {
   font-size: 11px;
   width: 11px;
 }
+footer a {
+  color: inherit;
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -86,9 +89,6 @@ footer i {
     font-size: 15px;
     font-style: normal;
     gap: 30px;
-  }
-  footer a {
-    color: inherit;
   }
 }
 .heart .fa-solid {
@@ -355,6 +355,22 @@ a {
 }
 
 /********DESKTOP*********/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fonctionnement {
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+  }
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .restaurant a {
+    width: 50%;
+  }
+  .restaurant h2 {
+    text-align: center;
+  }
+}
 @media (min-width: 1024px) {
   h1 {
     font-size: 30px;

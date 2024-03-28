@@ -28,9 +28,14 @@ footer {
         font-size: 11px;
         width: 11px;
     }
+
+
+    a {
+        color: inherit;
+    }
 }
 
-@media (min-width:1024px){
+@media (min-width:768px){
 footer {
     display: flex;
     flex-direction: row-reverse;
@@ -50,8 +55,6 @@ footer {
         gap: 30px;
     }
 
-    a {
-        color: inherit;
-    }
+  
 }
 }

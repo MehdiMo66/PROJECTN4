@@ -68,8 +68,11 @@ footer i {
   font-size: 11px;
   width: 11px;
 }
+footer a {
+  color: inherit;
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -86,9 +89,6 @@ footer i {
     font-size: 15px;
     font-style: normal;
     gap: 30px;
-  }
-  footer a {
-    color: inherit;
   }
 }
 /**mobile first***/
