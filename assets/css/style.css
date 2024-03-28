@@ -210,7 +210,8 @@ form input ::placeholder {
 }
 
 /*******TITRE******/
-h1, h2 {
+h1,
+h2 {
   font-size: 24px;
 }
 
@@ -279,7 +280,7 @@ a {
 }
 .fonctionnement__button span {
   color: black;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
 }
 .fonctionnement__button a :active {
@@ -354,7 +355,7 @@ a {
 }
 
 /********DESKTOP*********/
-@media (min-width: 767.98px) {
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
   .restaurant {
     padding-left: 15%;
     padding-right: 15%;
@@ -399,8 +400,5 @@ a {
   }
   .restaurant__card a {
     width: 45%;
-  }
-  .restaurant h2 {
-    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */

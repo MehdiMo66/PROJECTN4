@@ -74,28 +74,28 @@ h1 {
             -webkit-text-fill-color: transparent;
             font-size: 20px;
             z-index: 2;
-            top:37px;
+            top: 37px;
         }
-    
+
         &:hover .fa-solid {
             animation: heart 1s forwards;
             opacity: 1;
-    
-    
+
+
         }
-    
+
         .fa-regular {
             position: absolute;
             font-size: 20px;
             z-index: 1;
-            top:37px;
+            top: 37px;
 
         }
-    
+
         &:hover .fa-regular {
             opacity: 0;
         }
-        
+
     }
 
 }
@@ -107,15 +107,15 @@ h1 {
     padding: 10px;
     border-radius: 20px 20px;
     margin-top: -50px;
-    
+
 
 
     .menu__part {
         animation: menu 1s forwards;
         margin-bottom: 30px;
         padding: 5px;
-        
-        
+
+
         &--entree {
             animation-delay: 0.1s;
         }
@@ -178,7 +178,7 @@ h1 {
             margin-right: 0px;
         }
 
-     
+
 
         .txt {
             padding: 15px;
@@ -235,7 +235,7 @@ h1 {
 
     &:hover {
         opacity: 0.8;
-        box-shadow: 5px 5px 4px 0px darken(#ddd9d9, 10%) ;
+        box-shadow: 5px 5px 4px 0px darken(#ddd9d9, 10%);
     }
 }
 
@@ -243,20 +243,22 @@ h1 {
 /*******DESKTOP******/
 
 
-@media (min-width:768px){
-    .menu { transition: 1s ease-in;}
-    
-    .menu__part {
-        width: 70%;
-      margin: auto;
-     
+@media (min-width:768px) {
+    .menu {
+        transition: 1s ease-in;
     }
 
-   
+    .menu__part {
+        width: 70%;
+        margin: auto;
+
+    }
+
+
 }
 
 @media (min-width:1024px) {
-  
+
 
     .menu {
         margin-left: 15%;
@@ -272,7 +274,6 @@ h1 {
     .menu__part {
         width: 70%;
         margin: auto;
-
 
     }
 }

@@ -107,7 +107,8 @@ form {
 
 /*******TITRE******/
 
-h1 , h2 {
+h1,
+h2 {
     font-size: 24px;
 }
 
@@ -137,7 +138,7 @@ h1 , h2 {
 
         &:hover {
             opacity: 0.8;
-            box-shadow: 5px 5px 4px 0px darken(#ddd9d9, 10%) ;
+            box-shadow: 5px 5px 4px 0px darken(#ddd9d9, 10%);
         }
     }
 
@@ -175,20 +176,20 @@ a {
             gap: 10px;
             align-items: center;
             background-color: #F6F6F6;
-            
+
             i {
                 color: #9a9996;
             }
 
             &:hover i {
-            color: #9356DC;
+                color: #9356DC;
 
+            }
         }
-    }
 
         span {
             color: black;
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 400;
         }
 
@@ -262,11 +263,11 @@ a {
 
             display: flex;
             flex-direction: row;
-            justify-content: space-between;        
+            justify-content: space-between;
             align-items: center;
             margin: 15px;
             height: 50px;
-      
+
             p {
                 margin: 2px;
                 font-size: 17px;
@@ -274,7 +275,7 @@ a {
 
             h3 {
                 margin: 0px;
-                font-size:18px;
+                font-size: 18px;
             }
         }
 
@@ -286,52 +287,48 @@ a {
 
 /********DESKTOP*********/
 
-@media (min-width: 767.98px) {
-   
+@media (min-width: 767.98px) and (max-width:1023.98px) {
 
-    .restaurant{
-    padding-left:15%;
-    padding-right: 15%;
+
+    .restaurant {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
-    
 
     h2 {
         text-align: center;
-     }     
+    }
 
-    .fonctionnement{
+
+    .fonctionnement {
         justify-content: center;
-        padding-left:15%;
+        padding-left: 15%;
         padding-right: 15%;
         margin: auto;
-        
-   
-     h2 {
-    text-align: center;
-     }
 
-    
+        h2 {
+            text-align: center;
+        }
     }
-   }
+}
 
 
 @media (min-width:1024px) {
 
 
-
     h1 {
         font-size: 30px;
-    
+
     }
 
-    
+
     .fonctionnement {
-        padding-left:15%;
+        padding-left: 15%;
         padding-right: 15%;
         margin: 0px;
-      
-       
+
+
         &__button {
             flex-direction: row;
             justify-content: center;
@@ -340,13 +337,13 @@ a {
 
 
     .restaurant {
-      
+
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-left:15%;
+        padding-left: 15%;
         padding-right: 15%;
-        
+
         &__card {
             flex-direction: row;
             flex-wrap: wrap;
@@ -356,9 +353,6 @@ a {
                 width: 45%;
 
             }
-        }
-        h2 {
-            text-align: left;
         }
 
     }
