@@ -346,40 +346,35 @@ a {
 }
 .restaurant .card__content p {
   margin: 2px;
+  font-size: 17px;
 }
 .restaurant .card__content h3 {
   margin: 0px;
+  font-size: 18px;
 }
 
 /********DESKTOP*********/
-@media (min-width: 480px) {
+@media (min-width: 767.98px) {
+  .restaurant {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  h2 {
+    text-align: center;
+  }
   .fonctionnement {
     justify-content: center;
-    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin: auto;
   }
   .fonctionnement h2 {
     text-align: center;
   }
-  .restaurant a {
-    width: 70%;
-  }
-  .restaurant h2 {
-    text-align: center;
-  }
-  main {
-    transition: 1s ease-in;
-  }
-  .restaurant {
-    transition: all 1s ease-in;
-  }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 30px;
-  }
-  .restaurant {
-    transition: 1s ease-in;
   }
   .fonctionnement {
     padding-left: 15%;
@@ -390,15 +385,12 @@ a {
     flex-direction: row;
     justify-content: center;
   }
-  .fonctionnement h2 {
-    text-align: left;
-  }
   .restaurant {
-    padding-left: 15%;
-    padding-right: 15%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .restaurant__card {
     flex-direction: row;

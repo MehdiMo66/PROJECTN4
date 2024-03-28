@@ -269,10 +269,12 @@ a {
       
             p {
                 margin: 2px;
+                font-size: 17px;
             }
 
             h3 {
-                margin: 0px
+                margin: 0px;
+                font-size:18px;
             }
         }
 
@@ -284,45 +286,37 @@ a {
 
 /********DESKTOP*********/
 
-@media (min-width:480px)  {
+@media (min-width: 767.98px) {
    
-   
-   
-    .fonctionnement{
-        justify-content: center;
-        width: 70%;
-        margin: auto;
 
-      
-     h2 {
+    .restaurant{
+    padding-left:15%;
+    padding-right: 15%;
+    }
+
+    
+
+    h2 {
         text-align: center;
      }     
-}
 
-  .restaurant  {
-    
-   a{ width: 70%;
-  }
-
-  h2 {
+    .fonctionnement{
+        justify-content: center;
+        padding-left:15%;
+        padding-right: 15%;
+        margin: auto;
+        
+   
+     h2 {
     text-align: center;
-  }
+     }
+
+    
+    }
+   }
 
 
-}
-
-main {
-    transition: 1s ease-in;
-}
-
-.restaurant {
-    transition: all 1s ease-in;
-}
-
-}
-
-
-@media (min-width:768px) {
+@media (min-width:1024px) {
 
 
 
@@ -331,38 +325,28 @@ main {
     
     }
 
-.restaurant {
-    transition: 1s ease-in;
-}
-
+    
     .fonctionnement {
-        padding-left: 15%;
+        padding-left:15%;
         padding-right: 15%;
         margin: 0px;
-        
+      
        
         &__button {
             flex-direction: row;
             justify-content: center;
-
-
         }
-
-        h2 {
-            text-align: left;
-        }
-
-       
     }
 
 
     .restaurant {
-        padding-left: 15%;
-        padding-right: 15%;
+      
         display: flex;
         justify-content: center;
         flex-direction: column;
-
+        padding-left:15%;
+        padding-right: 15%;
+        
         &__card {
             flex-direction: row;
             flex-wrap: wrap;
