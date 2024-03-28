@@ -107,8 +107,8 @@ form {
 
 /*******TITRE******/
 
-h1 {
-    font-size: 18px;
+h1 , h2 {
+    font-size: 24px;
 }
 
 .h1_explore {
@@ -175,20 +175,16 @@ a {
             gap: 10px;
             align-items: center;
             background-color: #F6F6F6;
-            white-space: nowrap;
-
-            .fa-store {
-                color: #9356DC;
-
-            }
-
-            .fa-mobile-screen-button,
-            .fa-list {
+            
+            i {
                 color: #9a9996;
             }
 
+            &:hover i {
+            color: #9356DC;
 
         }
+    }
 
         span {
             color: black;
@@ -216,6 +212,7 @@ a {
     }
 
 }
+
 
 /*******RESTAURANTS******/
 
@@ -252,13 +249,12 @@ a {
         position: relative;
         background-color: white;
         border-radius: 25px;
-        height: 250px;
         margin-bottom: 20px;
 
         img {
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
-            height: 170px;
+            height: 150px;
             object-fit: cover;
         }
 
@@ -266,14 +262,13 @@ a {
 
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            padding: 10px;
+            justify-content: space-between;        
             align-items: center;
-            margin: 10px;
-
-
+            margin: 15px;
+            height: 50px;
+      
             p {
-                margin-top: 2px;
+                margin: 2px;
             }
 
             h3 {
@@ -289,14 +284,16 @@ a {
 
 /********DESKTOP*********/
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:480px)  {
+   
    
    
     .fonctionnement{
         justify-content: center;
-        width: 50%;
+        width: 70%;
         margin: auto;
 
+      
      h2 {
         text-align: center;
      }     
@@ -304,7 +301,7 @@ a {
 
   .restaurant  {
     
-   a{ width: 50%;
+   a{ width: 70%;
   }
 
   h2 {
@@ -314,29 +311,48 @@ a {
 
 }
 
+main {
+    transition: 1s ease-in;
+}
+
+.restaurant {
+    transition: all 1s ease-in;
+}
 
 }
 
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
+
+
 
     h1 {
         font-size: 30px;
     
     }
 
+.restaurant {
+    transition: 1s ease-in;
+}
 
     .fonctionnement {
         padding-left: 15%;
         padding-right: 15%;
         margin: 0px;
-
+        
+       
         &__button {
             flex-direction: row;
             justify-content: center;
 
 
         }
+
+        h2 {
+            text-align: left;
+        }
+
+       
     }
 
 
@@ -357,6 +373,10 @@ a {
 
             }
         }
+        h2 {
+            text-align: left;
+        }
+
     }
 
 }

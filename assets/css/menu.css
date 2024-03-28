@@ -1,3 +1,4 @@
+/****Loader****/
 @keyframes loader {
   99% {
     opacity: 1;
@@ -7,7 +8,6 @@
     z-index: -1;
   }
 }
-/****Loader****/
 @keyframes flash {
   0% {
     color: #9356DC;
@@ -20,7 +20,6 @@
   }
   90% {
     color: rgb(24, 12, 12);
-    text-shadow: none;
     font-size: 40px;
   }
   100% {
@@ -29,14 +28,6 @@
   }
 }
 @keyframes heart {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes bleach {
   0% {
     transform: scale(0);
   }
@@ -77,8 +68,11 @@ footer i {
   font-size: 11px;
   width: 11px;
 }
+footer a {
+  color: inherit;
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -149,35 +143,33 @@ h1 {
   flex-direction: row;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
-
-/****coeur*****/
-.heart .fa-solid {
+.h1-heart .heart .fa-solid {
   position: absolute;
-  top: 1.9em;
   opacity: 0;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
+  z-index: 2;
+  top: 37px;
 }
-.heart:hover .fa-solid {
-  animation: bleach 1s forwards;
+.h1-heart .heart:hover .fa-solid {
+  animation: heart 1s forwards;
   opacity: 1;
-  transition-duration: 1s;
 }
-.heart .fa-regular {
+.h1-heart .heart .fa-regular {
   position: absolute;
-  top: 1.9em;
-  opacity: 1;
   font-size: 20px;
+  z-index: 1;
+  top: 37px;
 }
-.heart .fa-regular:hover {
+.h1-heart .heart:hover .fa-regular {
   opacity: 0;
 }
 
-/************/
 .menu {
   background: #F6F6F6;
   position: relative;
@@ -188,6 +180,7 @@ h1 {
 .menu .menu__part {
   animation: menu 1s forwards;
   margin-bottom: 30px;
+  padding: 5px;
 }
 .menu .menu__part--entree {
   animation-delay: 0.1s;
@@ -203,6 +196,15 @@ h1 {
   flex-direction: column;
   gap: 10px;
   margin-top: 15px;
+}
+.menu h2 {
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+.menu .bande_horizontale {
+  border-top: 2px solid #99E2D0;
+  width: 35px;
 }
 .menu .card {
   box-shadow: 5px 5px 4px 0px #ddd9d9;
@@ -235,35 +237,25 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
 }
+.menu .card h3,
 .menu .card p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  margin: 0;
+  margin: 0px;
+}
+.menu .card p {
   font-weight: 300;
 }
 .menu .card h3 {
   font-size: 18px;
-  margin: 0px;
   font-weight: 500;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .menu .card__subtitle {
   font-size: 15px;
   margin-top: 0px;
   display: flex;
   justify-content: space-between;
-}
-.menu h2 {
-  font-weight: 300;
-  font-size: 15px;
-  margin-bottom: 1px;
-}
-.menu #bande_horizontale {
-  border-top: 2px solid #99E2D0;
-  width: 35px;
 }
 
 .btn {
@@ -283,13 +275,24 @@ h1 {
 }
 .btn:hover {
   opacity: 0.8;
+  box-shadow: 5px 5px 4px 0px #c5bebe;
 }
 
 /*******DESKTOP******/
-@media (min-width: 1024px) {
+@media (min-width: 480px) {
+  .menu {
+    transition: 1s ease-in;
+  }
+  .menu__part {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
   .menu {
     margin-left: 15%;
     margin-right: 15%;
+    transition: 1s ease-in;
   }
   .h1-heart {
     justify-content: center;

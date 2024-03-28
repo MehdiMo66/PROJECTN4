@@ -107,13 +107,15 @@ h1 {
     padding: 10px;
     border-radius: 20px 20px;
     margin-top: -50px;
-
+    
 
 
     .menu__part {
         animation: menu 1s forwards;
         margin-bottom: 30px;
-
+        padding: 5px;
+        
+        
         &--entree {
             animation-delay: 0.1s;
         }
@@ -143,7 +145,7 @@ h1 {
     }
 
 
-    #bande_horizontale {
+    .bande_horizontale {
         border-top: 2px solid #99E2D0;
         width: 35px;
     }
@@ -176,10 +178,14 @@ h1 {
             margin-right: 0px;
         }
 
+     
 
         .txt {
             padding: 15px;
             width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         h3,
@@ -229,18 +235,33 @@ h1 {
 
     &:hover {
         opacity: 0.8;
+        box-shadow: 5px 5px 4px 0px darken(#ddd9d9, 10%) ;
     }
 }
 
 
 /*******DESKTOP******/
 
-@media (min-width:1024px) {
+
+@media (min-width:480px){
+    .menu { transition: 1s ease-in;}
+    
+    .menu__part {
+        width: 70%;
+      margin: auto;
+     
+    }
+
+   
+}
+
+@media (min-width:768px) {
+  
 
     .menu {
         margin-left: 15%;
         margin-right: 15%;
-
+        transition: 1s ease-in;
     }
 
     .h1-heart {
