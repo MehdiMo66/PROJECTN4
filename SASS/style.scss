@@ -19,6 +19,7 @@ header img {
 }
 
 /********loader********/
+
 .loader {
     height: 100%;
     width: 100%;
@@ -30,15 +31,16 @@ header img {
     font-size: 20px;
     align-items: center;
     animation: loader 3s ease-in forwards;
-    box-sizing: border-box;
-
+  
+    
 
     .lettre {
         font-family: 'Shrikhand', sans-serif;
         letter-spacing: 5px;
         animation: flash 1s linear infinite;
         color: rgb(24, 12, 12);
-
+     
+        
 
         &:nth-child(1) {
             animation-delay: 0.1s;
