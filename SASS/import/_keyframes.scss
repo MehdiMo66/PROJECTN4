@@ -1,21 +1,26 @@
 /****Loader****/
 
 @keyframes loader {
-    
-    99%{opacity: 1;}
-    100%{opacity: 0;
-       z-index: -1;
-      
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
     }
 }
 
 @keyframes flash {
 
-    0% {color:  #9356DC;
+    0% {
+        color: #9356DC;
         text-shadow: 0 0 7px #cc0dc9;
     }
 
-    30% {color: #FF79DA ;
+    30% {
+        color: #FF79DA;
         font-size: 50px;
         text-shadow: 0 0 7px #ff00ee;
     }
@@ -25,19 +30,23 @@
         font-size: 40px;
     }
 
-    100% {color: #FF79DA ;
+    100% {
+        color: #FF79DA;
         text-shadow: 0 0 7px #ff00ee;
     }
 }
-
 
 @keyframes heart {
     0% {
         transform: scale(0);
     }
 
-    100% {
+   50% {
         transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
     }
 
 }
@@ -46,13 +55,12 @@
 
 @keyframes menu {
     0% {
-      
+
         transform: scale(0);
     }
 
     100% {
-       
+
         transform: scale(1);
     }
 }
-

@@ -76,6 +76,7 @@ header img {
     }
 }
 
+
 /*****BARRE DE RECHECHE*****/
 
 form {
@@ -285,11 +286,9 @@ a {
 }
 
 
+/******TABLETTE******/
 
-
-/********DESKTOP*********/
-
-@media (min-width: 767.98px) and (max-width:1023.98px) {
+@media (min-width:480px) and (max-width: 767.98px) {
 
 
     .restaurant {
@@ -315,8 +314,9 @@ a {
     }
 }
 
+/********DESKTOP*********/
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
 
 
     h1 {

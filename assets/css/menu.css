@@ -31,8 +31,11 @@
   0% {
     transform: scale(0);
   }
-  100% {
+  50% {
     transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes menu {
@@ -72,6 +75,18 @@ footer a {
   color: inherit;
 }
 
+@media (min-width: 480px) and (max-width: 767.98px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   footer {
     display: flex;
@@ -96,13 +111,6 @@ body {
   margin: 0px;
 }
 
-header img {
-  display: flex;
-  margin: auto;
-  width: 120px;
-  padding: 15px;
-}
-
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -118,6 +126,12 @@ header {
 }
 header i {
   padding-left: 10px;
+}
+header img {
+  display: flex;
+  margin: auto;
+  width: 120px;
+  padding: 15px;
 }
 
 main img {
@@ -157,7 +171,7 @@ h1 {
   top: 37px;
 }
 .h1-heart .heart:hover .fa-solid {
-  animation: heart 1s forwards;
+  animation: heart 2s forwards;
   opacity: 1;
 }
 .h1-heart .heart .fa-regular {
@@ -278,17 +292,24 @@ h1 {
   box-shadow: 5px 5px 4px 0px #c5bebe;
 }
 
-/*******DESKTOP******/
-@media (min-width: 768px) {
+/******TABLETTE******/
+@media (min-width: 480px) and (max-width: 767.98px) {
   .menu {
-    transition: 1s ease-in;
+    transition: all 1s ease-in;
   }
   .menu__part {
     width: 70%;
     margin: auto;
   }
+  .menu .bande_horizontale {
+    margin: auto;
+  }
+  .menu h2 {
+    text-align: center;
+  }
 }
-@media (min-width: 1024px) {
+/*******DESKTOP******/
+@media (min-width: 768px) {
   .menu {
     margin-left: 15%;
     margin-right: 15%;

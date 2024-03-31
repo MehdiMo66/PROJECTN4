@@ -31,8 +31,11 @@
   0% {
     transform: scale(0);
   }
-  100% {
+  50% {
     transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 @keyframes menu {
@@ -72,6 +75,18 @@ footer a {
   color: inherit;
 }
 
+@media (min-width: 480px) and (max-width: 767.98px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   footer {
     display: flex;
@@ -104,7 +119,7 @@ footer a {
   z-index: 2;
 }
 .heart:hover .fa-solid {
-  animation: heart 1s forwards;
+  animation: heart 2s forwards;
   opacity: 1;
 }
 .heart .fa-regular {
@@ -146,7 +161,6 @@ header img {
   font-size: 20px;
   align-items: center;
   animation: loader 3s ease-in forwards;
-  box-sizing: border-box;
 }
 .loader .lettre {
   font-family: "Shrikhand", sans-serif;
@@ -354,8 +368,8 @@ a {
   font-size: 18px;
 }
 
-/********DESKTOP*********/
-@media (min-width: 767.98px) and (max-width: 1023.98px) {
+/******TABLETTE******/
+@media (min-width: 480px) and (max-width: 767.98px) {
   .restaurant {
     padding-left: 15%;
     padding-right: 15%;
@@ -373,7 +387,8 @@ a {
     text-align: center;
   }
 }
-@media (min-width: 1024px) {
+/********DESKTOP*********/
+@media (min-width: 768px) {
   h1 {
     font-size: 30px;
   }
