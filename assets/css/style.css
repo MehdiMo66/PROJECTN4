@@ -110,13 +110,12 @@ footer a {
   position: absolute;
   right: 1.5em;
   bottom: 1.5em;
-  opacity: 0;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
-  z-index: 2;
+  opacity: 0;
 }
 .heart:hover .fa-solid {
   animation: heart 2s forwards;
@@ -127,7 +126,6 @@ footer a {
   right: 1.5em;
   bottom: 1.5em;
   font-size: 20px;
-  z-index: 1;
 }
 .heart:hover .fa-regular {
   opacity: 0;
