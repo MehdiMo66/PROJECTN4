@@ -31,11 +31,8 @@
   0% {
     transform: scale(0);
   }
-  50% {
-    transform: scale(1);
-  }
   100% {
-    transform: scale(0);
+    transform: scale(1);
   }
 }
 @keyframes menu {
@@ -116,6 +113,7 @@ footer a {
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   opacity: 0;
+  z-index: 2;
 }
 .heart:hover .fa-solid {
   animation: heart 2s forwards;
@@ -126,6 +124,7 @@ footer a {
   right: 1.5em;
   bottom: 1.5em;
   font-size: 20px;
+  z-index: 3;
 }
 .heart:hover .fa-regular {
   opacity: 0;
